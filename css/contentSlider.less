@@ -1,0 +1,127 @@
+.slider-main {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.8s ease;
+}
+.slider-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  height: 35em;
+  overflow: hidden;
+}
+
+.slider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.8s ease, visibility 1.8s;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1.8s ease, visibility 1.8s;
+  }
+}
+.slider-item-objects {
+  display: grid;
+  grid-template-columns: 2fr 1fr; // Obrázek má 2x větší šířku než text
+  gap: 20px;
+  align-items: stretch; // Zajištění, že všechny buňky budou mít stejnou výšku
+  height: 100%;
+  padding: 20px;
+
+  .slider-img > img{
+    max-width: 100%;
+    height: 547px;
+  }
+
+  .slider-text {
+    display: flex;
+    flex-direction: column; // Text a tlačítka v jedné vertikální ose
+    justify-content: space-between; // Rozloží obsah mezi vrchní a spodní část
+    text-align: left;
+
+    .icon-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+
+      i {
+        font-size: 24px;
+        color: #333;
+      }
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .cta-buttons-container {
+      margin-top: auto;
+      margin-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      p {
+        font-size: 0.9rem;
+        color: #777;
+        margin-bottom: 10px;
+      }
+
+      .cta-buttons {
+        display: flex;
+        gap: 10px;
+
+        button {
+          padding: 10px 20px;
+          background-color: #000;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          width: 6em;
+          font-size: 1.1rem;
+
+          &:hover {
+            background-color: #333;
+          }
+        }
+      }
+    }
+  }
+}
+
+&.active .slider-text {
+  opacity: 1; // Zviditelnění textu
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+  &.left {
+    left: 10px;
+  }
+  &.right {
+    right: 10px;
+  }
+}

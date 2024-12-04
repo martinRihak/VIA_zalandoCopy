@@ -1,0 +1,275 @@
+body {
+  margin: 0px;
+  font-family: Helvetica, sans-serif, sans-serif;
+}
+.topbar {
+  background-color: #f8f9fa;
+  padding: 5px 0;
+  font-size: 0.9em;
+  color: #6c757d;
+  display: flex;
+  justify-content: space-between;
+}
+.topbar a {
+  color: #6c757d;
+  text-decoration: none;
+  margin: 0 15px;
+}
+.saleDiv {
+  background: #e05113;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: px;
+}
+.saleDiv p {
+  align-items: center;
+  font-size: 1.2em;
+  color: white;
+  margin: 0;
+}
+/* Hlavní navigace */
+.main-categories {
+  font-weight: bold;
+}
+.main-categories a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  /* Nastavení pozadí pro celou navigaci */
+}
+.navbar-icons a {
+  color: #000;
+  font-size: 1.5rem;
+  /* Velikost ikony */
+  margin-right: 15px;
+}
+.navbar-icons a:last-child {
+  margin-right: 0;
+  /* Poslední ikoně odstraníme pravý okraj */
+}
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-main {
+  width: 100%;
+  max-width: 1200px;
+  /* Maximální šířka pro vycentrování */
+  flex-direction: column;
+}
+/* Spodní lišta s dalšími kategoriemi */
+.bottom-categories {
+  background-color: #fff;
+  padding: 5px 0;
+  display: flex;
+  font-size: 0.95em;
+}
+.bottom-categories a {
+  margin: 0 10px;
+  color: #000000;
+  text-decoration: none;
+}
+.bottom-categories .sale {
+  color: red;
+}
+.bottom-categories .search {
+  margin-left: auto;
+}
+.bottom-categories .search form {
+  display: flex;
+  align-items: center;
+}
+.bottom-categories .search form input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+.bottom-categories .search form button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.bottom-categories .search form button:hover {
+  background-color: #333;
+}
+/*Kategori obleceni*/
+.brand-grid,
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.brand-grid div,
+.category-grid div {
+  flex: 1 1 calc(25% - 20px);
+  /* Čtyři položky na řádek, s mezerou 20px */
+  min-width: 150px;
+  /* Minimální šířka pro každou položku */
+  color: #333;
+  font-size: 1em;
+}
+.brand-grid a,
+.category-grid a {
+  color: #333;
+  text-decoration: none;
+}
+.brand-grid a:hover,
+.category-grid a:hover {
+  text-decoration: underline;
+}
+.FavBrand {
+  width: 100%;
+}
+.FavBrand .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.newsletter-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+.newsletter-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.newsletter-section .container .newsletter-info {
+  flex: 1 1 50%;
+}
+.newsletter-section .container .newsletter-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.newsletter-section .container .newsletter-info p {
+  font-size: 1rem;
+  color: #555;
+}
+.newsletter-section .container .newsletter-form {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.newsletter-section .container .newsletter-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.newsletter-section .container .newsletter-form form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter-section .container .newsletter-form form .form-group label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.newsletter-section .container .newsletter-form form .form-group input,
+.newsletter-section .container .newsletter-form form .form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.newsletter-section .container .newsletter-form form .btn-submit {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.newsletter-section .container .newsletter-form form .btn-submit:hover {
+  background-color: #333;
+}
+.newsletter-section .container .newsletter-form form .btn-submit i {
+  margin-right: 5px;
+}
+.newsletter-section .container .newsletter-form .small-text {
+  font-size: 0.8rem;
+  color: #777;
+}
+.newsletter-section .container .newsletter-form .small-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+.newsletter-section .container .newsletter-form .small-text a:hover {
+  text-decoration: underline;
+}
+.footer-section .footer-purple {
+  background-color: #5d00ff;
+  color: #fff;
+  padding: 40px 20px;
+}
+.footer-section .footer-purple .container .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.footer-section .footer-purple .container .footer-grid h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.footer-section .footer-purple .container .footer-grid ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section .footer-purple .container .footer-grid ul li {
+  margin-bottom: 5px;
+}
+.footer-section .footer-purple .container .footer-grid ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-section .footer-purple .container .footer-grid ul li a:hover {
+  text-decoration: underline;
+}
+.footer-section .footer-purple .container .footer-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-section .footer-purple .container .footer-bottom img {
+  max-height: 40px;
+}
+.footer-section .footer-dark {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer-section .footer-dark .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-section .footer-dark .container .links a {
+  margin-right: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer-section .footer-dark .container .links a:hover {
+  text-decoration: underline;
+}
+.footer-section .footer-dark .container .social img {
+  max-height: 40px;
+  margin-left: 10px;
+}

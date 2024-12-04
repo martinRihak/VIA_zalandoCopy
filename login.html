@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Přihlásit nebo registrovat - Zalando</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/loginPage.css" />
+    <link rel="icon" type="image" href="img/zalando_minilogo.png">
+  </head>
+  <body>
+    <div class="container mt-5 text-center">
+      <div class="back-arrow">
+        <a href="index.html"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
+      </div>
+      <!-- Logo -->
+      <div class="logo">
+        <svg viewBox="0 0 24 24" width="3em" height="3em" fill="#ff4c00" aria-labelledby="zalando-:Rap:" class="zds-icon RC794g X9n9TI DlJ4rT _5Yd-hZ RW-Dtz DLnl2N" focusable="false" aria-hidden="false" role="img"><title id="zalando-:Rap:">Zalando</title><path d="M20.925 9.623c-1.542-1.945-3.713-3.808-6.534-5.505h-.02c-2.84-1.656-5.519-2.629-7.933-3.022-1.502-.248-2.232.042-2.557.228-.324.186-.933.683-1.481 2.132C1.528 5.794 1.02 8.65 1 11.982v.021c.02 3.353.528 6.188 1.4 8.527.548 1.449 1.157 1.945 1.481 2.132.325.186 1.055.476 2.557.227 2.414-.393 5.092-1.366 7.933-3.021h.02c2.82-1.697 4.992-3.56 6.534-5.506.974-1.2 1.075-1.986 1.075-2.38 0-.372-.101-1.159-1.075-2.359z"></path></svg>
+      </div>
+
+      <!-- Nadpis -->
+      <h1 class="mt-4">Přihlásit nebo registrovat</h1>
+      <p>Je to mžik</p>
+
+      <!-- Formulář -->
+      <form id="loginForm" class="mt-3">
+        <div class="form-group">
+          <label for="email" class="sr-only">E-mailová adresa</label>
+          <input 
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="E-mailová adresa"
+            required
+            style="border-radius: 0;"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mt-3">
+          Pokračovat
+        </button>
+      </form>
+      <!-- Právní informace -->
+      <div class="mt-4">
+        <p class="text-muted">
+          Vytvořením účtu souhlasíte s našimi
+          <a href="#">podmínkami používání</a>. V našem
+          <a href="#">oznámení o ochraně osobních údajů</a> se dozvíte, jak
+          nakládáme s vašimi údaji.
+        </p>
+      </div>
+      <!-- Tlačítka pro externí přihlášení -->
+      <div class="mt-4">
+        <button class="btn btn-outline-dark btn-block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" class="SpRgR2"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.2774 8.00008C3.2774 7.48044 3.3637 6.98225 3.51774 6.51498L0.821534 4.45605C0.296058 5.52297 0 6.72516 0 8.00008C0 9.2739 0.295694 10.4754 0.820441 11.5416L3.51519 9.47863C3.36261 9.01354 3.2774 8.51717 3.2774 8.00008Z" fill="#FBBC05"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.01117 3.27275C9.14005 3.27275 10.1597 3.67275 10.9608 4.3273L13.2914 2.00001C11.8712 0.763641 10.0504 0 8.01117 0C4.8452 0 2.12424 1.81056 0.821289 4.45603L3.51749 6.51495C4.13874 4.62912 5.90963 3.27275 8.01117 3.27275Z" fill="#FE584D"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.01117 12.7276C5.90963 12.7276 4.13874 11.3712 3.51749 9.48535L0.821289 11.5439C2.12424 14.1897 4.8452 16.0003 8.01117 16.0003C9.96522 16.0003 11.8308 15.3065 13.231 14.0065L10.6717 12.0279C9.94956 12.4828 9.04027 12.7276 8.01117 12.7276Z" fill="#34A853"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.659 7.99948C15.659 7.52675 15.5861 7.01765 15.4769 6.54492H8.01172V9.63585H12.3087C12.0939 10.6897 11.5091 11.4999 10.6722 12.0271L13.2315 14.0057C14.7023 12.6406 15.659 10.6071 15.659 7.99948Z" fill="#4285F4"></path></svg>
+          <span style="padding-left: 13px;">Pokračujte přes Google</span>
+        </button>
+        <button class="btn btn-outline-dark btn-block mt-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none" class="SpRgR2"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.7792 6.59749C15.3137 5.92389 15.7189 4.97183 15.5724 4C14.6987 4.05927 13.6775 4.60493 13.0817 5.31616C12.5385 5.9606 12.0921 6.91926 12.2665 7.84969C13.2215 7.87886 14.2073 7.32002 14.7792 6.59749ZM19.5 15.7391C19.1178 16.5707 18.9339 16.9423 18.4415 17.679C17.7546 18.7073 16.7861 19.9877 15.5848 19.9971C14.5186 20.0084 14.2437 19.315 12.7962 19.3235C11.3487 19.331 11.047 20.0102 9.97885 19.9999C8.77853 19.9895 7.8608 18.8342 7.17394 17.806C5.25228 14.9328 5.05015 11.5601 6.23514 9.76605C7.07815 8.49223 8.40779 7.74713 9.65697 7.74713C10.9282 7.74713 11.7281 8.43203 12.7809 8.43203C13.8021 8.43203 14.4238 7.74526 15.8942 7.74526C17.0074 7.74526 18.1866 8.34077 19.0258 9.3681C16.2746 10.8489 16.72 14.707 19.5 15.7391Z" fill="#1A1A1A"></path></svg>
+           <span style="padding-left: 13px;">Pokračujte přes Apple</span>
+        </button>
+        <button class="btn btn-outline-dark btn-block mt-2" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="SpRgR2"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7501 20V14.3761H8.71833V12.049H10.7501V10.2753C10.7501 8.25719 11.9449 7.14342 13.7719 7.14342C14.6472 7.14342 15.5629 7.30075 15.5629 7.30075V9.28153H14.5538C13.5593 9.28153 13.2499 9.90294 13.2499 10.5391V12.049H15.4684L15.1141 14.3761H13.2499V20C17.0745 19.3963 20 16.0663 20 12.0488C20 7.60358 16.4183 4 12 4C7.58172 4 4 7.60358 4 12.0488C4 16.0663 6.92552 19.3963 10.7501 20Z" fill="#1877F2"></path></svg>
+          <span style="padding-left: 13px;">Pokračujte přes Facebook</span>
+        </button>
+      </div>
+
+      <!-- Odkazy na právní informace -->
+      <div class="mt-4 " >
+        <p class="text-muted">
+        <a href="#" >Právní informace</a> |
+        <a href="#">Zásady ochrany soukromí</a>
+      </p>
+      </div>
+    </div>
+
+    <script>
+      // Funkce pro validaci formuláře
+      function validateForm(event) {
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailPattern.test(email)) {
+          console.log("Spatna forma emailu");
+          alert("Zadejte prosím platnou e-mailovou adresu.");
+          return false;
+        }
+        console.log("Email: ", email);
+        alert("Formular byl odeslan");
+
+        return true;
+      }
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", validateForm);
+    </script>
+  </body>
+</html>
