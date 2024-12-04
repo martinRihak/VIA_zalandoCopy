@@ -1,4 +1,19 @@
-#Zalando COPY
+# Zalando COPY
+
+#### Odkaz na web
+https://martinrihak.github.io/VIA_zalandoCopy/
+
+## Popis
+
+Jedná se o napodobeninu internetového eshopu [Zalando](https://www.zalando.cz/). Obsahuje hlavní stránku, ve které je na prvnim divu nastaven časovač pomocí JavaScriptu. 
+
+Po přejetí na iconu uživatele se zobrazí více sloupcové rozložení stránky na kterém při stisku tlařítla přihlásit vás přesměruje na stránku s přihlašovacím formulářem.
+
+Při kliknutí na iconu košíku. Vás stránka přesměruje na formulář na vyplnění doručovacích informací s validací.
+
+A poslední pod stránka se zobrazí při kliknutí na odkaz v hlavním menu týden Black Friday. Kde najdu malou nadítku produktů.
+
+## Zadání projektu
 
 jedná se o projekt, jehož výsledkem bude komplexní HTML 5 webová stránka.
 Na vstupu si student sám vybere grafický design stránky (existující reálná webová
